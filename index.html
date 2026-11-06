@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHU PRANA ORGANICS • Living Soil Nutrition</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            soil: { 50: '#FAF6F0', 100: '#F2ECE1', 200: '#E5DEC9', 700: '#4A3525', 800: '#2E1F14', 900: '#1C1613' },
+            forest: { 50: '#ECFDF5', 100: '#D1FAE5', 600: '#2D6A4F', 700: '#1B4332', 800: '#132F23', 900: '#0B1D16' },
+            amber: { 50: '#FFFBEB', 100: '#FEF3C7', 600: '#D97706', 700: '#B45309', 800: '#92400E' }
+          },
+          fontFamily: {
+            serif: ['"Fraunces"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #FAF6F0; color: #1C1613; }
+    .bg-grain { background-image: radial-gradient(rgba(27, 67, 50, 0.05) 1px, transparent 0); background-size: 24px 24px; }
+    input[type=range] { -webkit-appearance: none; background: transparent; }
+    input[type=range]::-webkit-slider-runnable-track { height: 8px; border-radius: 999px; background: #E5DEC9; }
+    input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 22px; width: 22px; border-radius: 50%; background: #1B4332; border: 3px solid #FAF6F0; box-shadow: 0 2px 6px rgba(0,0,0,0.25); margin-top: -7px; cursor: pointer; }
+  </style>
+</head>
+<body class="font-sans bg-grain antialiased selection:bg-forest-100 selection:text-forest-900">
+
+  <!-- Top Dispatch Ribbon -->
+  <aside class="bg-forest-900 text-forest-100 text-xs py-2 px-4 border-b border-forest-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-medium tracking-wide">BHU PRANA ORGANICS Direct Factory Dispatch: Lab-Tested Batch #BP-2026 Ready (5kg to 50 Metric Tons)</span>
+      </div>
+      <div class="flex items-center gap-4 text-forest-200">
+        <span>FCO Standard Compliant</span>
+        <span>•</span>
+        <span>Pan-India Bulk Logistics</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-soil-50/95 backdrop-blur border-b border-soil-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-forest-700 flex items-center justify-center text-white shadow-md">
+          <i data-lucide="sprout" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="font-serif font-bold text-xl tracking-tight text-soil-900 block leading-tight">BHU PRANA ORGANICS</span>
+          <span class="text-[11px] tracking-wider uppercase text-forest-700 font-semibold block">Living Soil Nutrition</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-soil-700">
+        <a href="#flagship-products" class="hover:text-forest-700 transition-colors">Flagship Products</a>
+        <a href="#facility-gallery" class="hover:text-forest-700 transition-colors">Facility & Packaging Photos</a>
+        <a href="#leadership" class="hover:text-forest-700 transition-colors">Founders</a>
+        <a href="#lab-specs" class="hover:text-forest-700 transition-colors">Lab Specs</a>
+        <a href="#dosage-calculator" class="hover:text-forest-700 transition-colors">Dosage Calculator</a>
+        <a href="#process" class="hover:text-forest-700 transition-colors">5-Stage Process</a>
+        <a href="#quote-hub" class="hover:text-forest-700 transition-colors">Bulk & Retail</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#quote-hub" class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-forest-700 hover:bg-forest-800 text-white text-sm font-semibold shadow-sm transition-all">
+          Get Instant Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-20 border-b border-soil-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-forest-100 text-forest-800 text-xs font-semibold uppercase tracking-wider">
+            <i data-lucide="shield-check" class="w-4 h-4 text-forest-700"></i>
+            100% Pure & Lab Tested • Zero Chemical Fillers
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-soil-900 leading-[1.12]">
+            Breathing Life Into Soil: <br>
+            <span class="italic text-forest-700 font-normal">From Sacred Pastures & Ancient Forests.</span>
+          </h1>
+          <p class="text-soil-700 text-base sm:text-lg leading-relaxed max-w-2xl">
+            At <strong>BHU PRANA ORGANICS</strong>, we manufacture two distinct, scientifically standardized organic soil conditioners: <strong>Pure Indigenous Cow Dung Vermicompost</strong> for rapid microbial & NPK nutrition, and <strong>Fungal-Dominant Forest Waste Compost</strong> for deep carbon humification and moisture lock.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-soil-100 border border-soil-200 flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+                <i data-lucide="flame" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-amber-700 uppercase tracking-wider block">Cow Dung Vermicompost</span>
+                <h2 class="text-base font-bold text-soil-900">BLACK GOLD</h2>
+                <p class="text-xs text-soil-700 mt-0.5"><em>Eisenia fetida</em> processed pure cow dung. High NPK, humic acid & plant growth hormones.</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-soil-100 border border-soil-200 flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-forest-100 text-forest-700 flex items-center justify-center shrink-0">
+                <i data-lucide="trees" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-forest-700 uppercase tracking-wider block">Forest Waste Compost</span>
+                <h2 class="text-base font-bold text-soil-900">LEAF HUMUS</h2>
+                <p class="text-xs text-soil-700 mt-0.5">Composted forest leaf litter & biomass. Mycorrhizal fungi rich for aeration & moisture lock.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#quote-hub" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-semibold text-sm shadow-md transition-all gap-2">
+              <i data-lucide="calculator" class="w-4 h-4"></i>
+              Request Bulk / Retail Price List
+            </a>
+            <a href="#facility-gallery" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-soil-100 hover:bg-soil-200 text-soil-900 font-semibold text-sm border border-soil-200 transition-all gap-2">
+              <i data-lucide="camera" class="w-4 h-4 text-forest-700"></i>
+              Tour Vermibeds, Sieving & Plant
+            </a>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-soil-200">
+            <div>
+              <span class="text-2xl sm:text-3xl font-serif font-bold text-forest-700 block">2.4x</span>
+              <span class="text-xs text-soil-700">Higher Microbial Count vs Raw Manure</span>
+            </div>
+            <div>
+              <span class="text-2xl sm:text-3xl font-serif font-bold text-forest-700 block">4mm</span>
+              <span class="text-xs text-soil-700">Double-Sieved Granular Uniformity</span>
+            </div>
+            <div>
+              <span class="text-2xl sm:text-3xl font-serif font-bold text-forest-700 block">0%</span>
+              <span class="text-xs text-soil-700">Soil Adulteration or Weed Seeds</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Facility Preview Card -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-soil-100 p-3 rounded-2xl border border-soil-200 shadow-xl">
+            <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-soil-200 group">
+              <img id="hero-preview-img" src="1000044695.jpg" alt="Inside BHU PRANA ORGANICS" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-soil-900/80 via-transparent to-transparent flex flex-col justify-end p-5">
+                <span class="text-xs uppercase tracking-widest text-emerald-300 font-semibold">Live Production Infrastructure</span>
+                <span class="text-lg font-serif font-bold text-white">Inside BHU PRANA ORGANICS</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-4 gap-2 pt-3">
+              <button onclick="setHeroPreview('1000044695.jpg')" class="relative rounded-lg overflow-hidden aspect-square border border-soil-200 focus:ring-2 focus:ring-forest-700">
+                <img src="1000044695.jpg" class="w-full h-full object-cover" alt="Vermibeds">
+              </button>
+              <button onclick="setHeroPreview('1000044654.jpg')" class="relative rounded-lg overflow-hidden aspect-square border border-soil-200 focus:ring-2 focus:ring-forest-700">
+                <img src="1000044654.jpg" class="w-full h-full object-cover" alt="Packaging">
+              </button>
+              <button onclick="setHeroPreview('1000044644.jpg')" class="relative rounded-lg overflow-hidden aspect-square border border-soil-200 focus:ring-2 focus:ring-forest-700">
+                <img src="1000044644.jpg" class="w-full h-full object-cover" alt="Sieving">
+              </button>
+              <button onclick="setHeroPreview('1000044645.jpg')" class="relative rounded-lg overflow-hidden aspect-square border border-soil-200 focus:ring-2 focus:ring-forest-700">
+                <img src="1000044645.jpg" class="w-full h-full object-cover" alt="Storage">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flagship Formulations -->
+  <section id="flagship-products" class="py-20 border-b border-soil-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-wider uppercase text-forest-700 block mb-2">Direct From Our Composting Beds</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-soil-900">Two Specialized Formulations & Branded Packaging</h2>
+        <p class="text-soil-700 mt-4 leading-relaxed">Unlike generic mixed municipal compost, we keep our cow dung vermicompost and forest biomass lines strictly separated in dedicated bays and pack them in breathable, moisture-retentive 5kg pouches and 50kg HDPE bags.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Vermicompost Card -->
+        <article class="bg-soil-100 rounded-3xl p-8 border border-soil-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-semibold uppercase tracking-wider">FLAGSHIP #1 • BLACK GOLD</span>
+              <span class="text-xs font-mono text-soil-700">FCO Certified Spec</span>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-soil-900">Premium Cow Dung Vermicompost</h3>
+            <p class="text-xs text-forest-700 font-semibold mt-1">100% Pure Indigenous Cow Dung digested by <em>Eisenia fetida</em> Red Wigglers</p>
+
+            <div class="my-6 rounded-2xl overflow-hidden aspect-[16/10] bg-soil-200 border border-soil-200">
+              <img src="1000044652.jpg" alt="Bhu Prana Vermicompost Packaging" class="w-full h-full object-cover">
+            </div>
+
+            <p class="text-sm text-soil-700 leading-relaxed">
+              Our flagship vermicompost is produced strictly from pre-cooled, weed-free indigenous cow dung without mixing soil, sand, or sawdust. The resulting dark, granular worm castings are rich in water-soluble nutrients, humic & fulvic acids, and nitrogen-fixing bacteria (<em>Azotobacter</em> & <em>Rhizobium</em>).
+            </p>
+
+            <div class="grid grid-cols-3 gap-2 my-5 p-4 rounded-xl bg-white/70 border border-soil-200 text-center font-mono">
+              <div>
+                <span class="text-[11px] text-soil-700 block uppercase">NPK Profile</span>
+                <span class="text-sm font-bold text-soil-900">2.1% : 1.4% : 1.8%</span>
+              </div>
+              <div>
+                <span class="text-[11px] text-soil-700 block uppercase">Humic + Fulvic</span>
+                <span class="text-sm font-bold text-soil-900">8.5% – 11.2%</span>
+              </div>
+              <div>
+                <span class="text-[11px] text-soil-700 block uppercase">Texture</span>
+                <span class="text-sm font-bold text-soil-900">4mm Tea-Granule</span>
+              </div>
+            </div>
+
+            <h4 class="text-xs font-bold uppercase tracking-wider text-soil-900 mt-4 mb-2">Core Agronomic Benefits:</h4>
+            <ul class="text-xs text-soil-700 space-y-2">
+              <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i><strong>Boosts Flowering & Yield:</strong> Natural plant growth hormones (auxins & gibberellins) accelerate root hair development and fruit set.</li>
+              <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i><strong>Zero Root Burn:</strong> Gentle, neutral pH (6.8–7.2) makes it safe for delicate seedlings, indoor houseplants, and heavy-feeding vegetables.</li>
+              <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i><strong>Pathogen & Weed Free:</strong> Thermophilic pre-composting eliminates weed seeds, grubs, and harmful nematodes.</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-soil-200 flex items-center justify-between">
+            <span class="text-xs text-soil-700 font-medium">Pack Sizes: 5kg Pouch • 25kg / 50kg HDPE Sacks</span>
+            <a href="#quote-hub" class="inline-flex items-center gap-1.5 text-xs font-bold text-forest-700 hover:text-forest-800 uppercase tracking-wider">
+              Order Vermicompost <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Forest Waste Compost Card -->
+        <article class="bg-soil-100 rounded-3xl p-8 border border-soil-200 flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-forest-100 text-forest-800 text-xs font-semibold uppercase tracking-wider">FLAGSHIP #2 • FOREST HUMUS</span>
+              <span class="text-xs font-mono text-soil-700">High Organic Carbon</span>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-soil-900">Pure Forest Waste Compost</h3>
+            <p class="text-xs text-forest-700 font-semibold mt-1">100% Decomposed Broadleaf Forest Litter, Twigs & Natural Plant Biomass</p>
+
+            <div class="my-6 rounded-2xl overflow-hidden aspect-[16/10] bg-soil-200 border border-soil-200">
+              <img src="1000044653.jpg" alt="Bhu Prana Forest Waste Compost Packaging" class="w-full h-full object-cover">
+            </div>
+
+            <p class="text-sm text-soil-700 leading-relaxed">
+              Mimicking the fertile floor of an untouched ancient rainforest, our Forest Waste Compost (Leaf Mold Humus) is aged for 6–8 months using fungal-dominant aerobic composting. It is extraordinarily rich in recalcitrant organic carbon, lignin-derived humus, and beneficial mycorrhizal networks.
+            </p>
+
+            <div class="grid grid-cols-3 gap-2 my-5 p-4 rounded-xl bg-white/70 border border-soil-200 text-center font-mono">
+              <div>
+                <span class="text-[11px] text-soil-700 block uppercase">Organic Carbon</span>
+                <span class="text-sm font-bold text-soil-900">30% – 36%</span>
+              </div>
+              <div>
+                <span class="text-[11px] text-soil-700 block uppercase">Water Holding</span>
+                <span class="text-sm font-bold text-soil-900">Up to 300%</span>
+              </div>
+              <div>
+                <span class="text-[11px] text-soil-700 block uppercase">Microbial Profile</span>
+                <span class="text-sm font-bold text-soil-900">Fungal-Dominant</span>
+              </div>
+            </div>
+
+            <h4 class="text-xs font-bold uppercase tracking-wider text-soil-900 mt-4 mb-2">Core Agronomic Benefits:</h4>
+            <ul class="text-xs text-soil-700 space-y-2">
+              <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i><strong>Breaks Hard Clay & Binds Sandy Soil:</strong> Fibrous humic structure creates micro-channels for oxygen penetration and deep root expansion.</li>
+              <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i><strong>Drought Protection & Moisture Lock:</strong> Reduces irrigation frequency by 35–40% during peak summer heatwaves.</li>
+              <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i><strong>Mycorrhizal Symbiosis:</strong> Establishes fungal hyphae bridges that unlock bound soil phosphorus and trace micronutrients.</li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-soil-200 flex items-center justify-between">
+            <span class="text-xs text-soil-700 font-medium">Pack Sizes: 5kg Pouch • 25kg / 40kg Breathable Bags</span>
+            <a href="#quote-hub" class="inline-flex items-center gap-1.5 text-xs font-bold text-forest-700 hover:text-forest-800 uppercase tracking-wider">
+              Order Forest Compost <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facility & Operations Photo Gallery -->
+  <section id="facility-gallery" class="py-20 border-b border-soil-200 bg-soil-100/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-semibold tracking-wider uppercase text-forest-700 block mb-2">BHU PRANA ORGANICS • Manufacturing Infrastructure</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-soil-900">Inside Our Production Facility & Operations</h2>
+        </div>
+        <p class="text-xs text-soil-700 mt-2 md:mt-0">120+ active shaded vermibeds, 4mm rotary trommel screening, and palletized godown storage.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 1. Vermibeds -->
+        <div class="bg-soil-100 rounded-2xl overflow-hidden border border-soil-200 shadow-sm flex flex-col">
+          <div class="relative aspect-[4/3] bg-soil-200">
+            <img src="1000044695.jpg" alt="Shaded Vermibeds" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-mono text-forest-700 uppercase tracking-wider block">120+ Active Beds • 26°C Shade</span>
+              <h4 class="font-bold text-sm text-soil-900 mt-1">Shaded HDPE & Brick Vermibeds</h4>
+              <p class="text-xs text-soil-700 mt-1">12ft × 4ft × 2ft aerated vermibeds under UV-stabilized green shade nets with overhead micro-misting foggers.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Forest Humus Bays -->
+        <div class="bg-soil-100 rounded-2xl overflow-hidden border border-soil-200 shadow-sm flex flex-col">
+          <div class="relative aspect-[4/3] bg-soil-200">
+            <img src="1000044636.jpg" alt="Forest Biomass Bays" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-mono text-forest-700 uppercase tracking-wider block">180-Day Maturation • Fungal</span>
+              <h4 class="font-bold text-sm text-soil-900 mt-1">Forest Leaf Mold Bays</h4>
+              <p class="text-xs text-soil-700 mt-1">Dedicated fungal-curing trenches where broadleaf forest litter and twigs are decomposed using native mycorrhizal cultures.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Bulk Packaging -->
+        <div class="bg-soil-100 rounded-2xl overflow-hidden border border-soil-200 shadow-sm flex flex-col">
+          <div class="relative aspect-[4/3] bg-soil-200">
+            <img src="1000044642.jpg" alt="Commercial HDPE Sacks" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-mono text-forest-700 uppercase tracking-wider block">25kg & 50kg Sacks • UV Woven</span>
+              <h4 class="font-bold text-sm text-soil-900 mt-1">Commercial HDPE Sacks</h4>
+              <p class="text-xs text-soil-700 mt-1">Tear-resistant woven PP/HDPE bags with micro-perforations for microbial respiration and inner moisture lock.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Retail Packaging -->
+        <div class="bg-soil-100 rounded-2xl overflow-hidden border border-soil-200 shadow-sm flex flex-col">
+          <div class="relative aspect-[4/3] bg-soil-200">
+            <img src="1000044651.jpg" alt="Stand-Up Pouches" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-mono text-forest-700 uppercase tracking-wider block">5kg & 10kg Pouches • Nursery Ready</span>
+              <h4 class="font-bold text-sm text-soil-900 mt-1">Stand-Up Retail Pouches</h4>
+              <p class="text-xs text-soil-700 mt-1">Heavy-duty matte BOPP stand-up pouches with resealable zip-locks, carry handles, and QR lab batch codes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. 4mm Sieving -->
+        <div class="bg-soil-100 rounded-2xl overflow-hidden border border-soil-200 shadow-sm flex flex-col">
+          <div class="relative aspect-[4/3] bg-soil-200">
+            <img src="image_99fa3edc.jpg" alt="Rotary Trommel Sieving" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-mono text-forest-700 uppercase tracking-wider block">4mm Mesh • 3 MT / Hour</span>
+              <h4 class="font-bold text-sm text-soil-900 mt-1">Rotary Trommel Sieving Unit</h4>
+              <p class="text-xs text-soil-700 mt-1">Mechanical rotary drum gently separates uniform 4mm tea-like granules while returning earthworms and cocoons to beds.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Serving Line -->
+        <div class="bg-soil-100 rounded-2xl overflow-hidden border border-soil-200 shadow-sm flex flex-col">
+          <div class="relative aspect-[4/3] bg-soil-200">
+            <img src="1000044644.jpg" alt="Hopper Bagging Line" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-mono text-forest-700 uppercase tracking-wider block">Hopper Serving • 25 MT / Day</span>
+              <h4 class="font-bold text-sm text-soil-900 mt-1">Vermi Serving & Bagging Line</h4>
+              <p class="text-xs text-soil-700 mt-1">Sieved compost is served via conveyor hoppers into digital weighing scales, machine-stitched, and loaded onto trucks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Storage Warehouse -->
+        <div class="bg-soil-100 rounded-2xl overflow-hidden border border-soil-200 shadow-sm flex flex-col">
+          <div class="relative aspect-[4/3] bg-soil-200">
+            <img src="1000044645.jpg" alt="Ventilated Godown" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-mono text-forest-700 uppercase tracking-wider block">500+ MT Stock • Palletized</span>
+              <h4 class="font-bold text-sm text-soil-900 mt-1">Ventilated Storage Godown</h4>
+              <p class="text-xs text-soil-700 mt-1">High-ceiling cool-roofed warehouse where sacks are stacked on elevated wooden pallets away from direct sunlight.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Office & QC Lab -->
+        <div class="bg-soil-100 rounded-2xl overflow-hidden border border-soil-200 shadow-sm flex flex-col">
+          <div class="relative aspect-[4/3] bg-soil-200">
+            <img src="1000044697.jpg" alt="Office and QC Lab" class="w-full h-full object-cover">
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-mono text-forest-700 uppercase tracking-wider block">In-House Assay • COA Certified</span>
+              <h4 class="font-bold text-sm text-soil-900 mt-1">Admin Office & Soil QC Lab</h4>
+              <p class="text-xs text-soil-700 mt-1">Administrative office, B2B sample lounge, and analytical testing desk equipped with digital pH/EC meters and balances.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lab Comparison Table -->
+  <section id="lab-specs" class="py-20 border-b border-soil-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-semibold tracking-wider uppercase text-forest-700 block mb-2">Analytical Quality Assurance</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-soil-900">Technical Specification & Nutrient Comparison</h2>
+      </div>
+
+      <div class="overflow-x-auto rounded-2xl border border-soil-200 bg-white shadow-sm">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-soil-100 border-b border-soil-200 font-serif text-soil-900">
+            <tr>
+              <th class="p-4 font-bold">Parameter / Standard</th>
+              <th class="p-4 font-bold text-amber-800">1. Cow Dung Vermicompost</th>
+              <th class="p-4 font-bold text-forest-800">2. Pure Forest Waste Compost</th>
+              <th class="p-4 font-bold text-soil-700">FCO Statutory Min.</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-soil-200 text-soil-800 text-xs sm:text-sm">
+            <tr>
+              <td class="p-4 font-medium">Primary Raw Feedstock</td>
+              <td class="p-4">100% Pure Indigenous Cow Dung</td>
+              <td class="p-4">Deciduous Forest Leaf Litter & Twigs</td>
+              <td class="p-4 text-soil-600">Biodegradable Organic</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">Organic Carbon (By Wt.)</td>
+              <td class="p-4 font-bold text-amber-700">22.5% – 26.0%</td>
+              <td class="p-4 font-bold text-forest-700">30.0% – 36.0% (Ultra High)</td>
+              <td class="p-4 text-soil-600">Min 18.0%</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">C:N Ratio (Carbon:Nitrogen)</td>
+              <td class="p-4">12:1 to 15:1 (Rapid Uptake)</td>
+              <td class="p-4">20:1 to 24:1 (Slow Release)</td>
+              <td class="p-4 text-soil-600">&lt; 20:1</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">Total Nitrogen (as N)</td>
+              <td class="p-4 font-bold">1.8% – 2.2%</td>
+              <td class="p-4 font-bold">1.1% – 1.4%</td>
+              <td class="p-4 text-soil-600">Min 1.0%</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">Total Phosphorus (as P₂O₅)</td>
+              <td class="p-4 font-bold">1.2% – 1.5%</td>
+              <td class="p-4 font-bold">0.8% – 1.1%</td>
+              <td class="p-4 text-soil-600">Min 0.8%</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">Total Potassium (as K₂O)</td>
+              <td class="p-4 font-bold">1.5% – 1.9%</td>
+              <td class="p-4 font-bold">1.4% – 1.7%</td>
+              <td class="p-4 text-soil-600">Min 0.8%</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">Dominant Microflora</td>
+              <td class="p-4">Beneficial Bacteria, Actinomycetes</td>
+              <td class="p-4">Saprophytic & Mycorrhizal Fungi</td>
+              <td class="p-4 text-soil-600">Pathogen Absent</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-medium">Moisture & pH</td>
+              <td class="p-4">22%–25% Moisture | pH 6.8–7.2</td>
+              <td class="p-4">25%–28% Moisture | pH 6.4–6.9</td>
+              <td class="p-4 text-soil-600">15–25% | pH 6.5–7.5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Dosage Calculator -->
+  <section id="dosage-calculator" class="py-20 border-b border-soil-200 bg-soil-100/50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-semibold tracking-wider uppercase text-forest-700 block mb-2">Precision Agronomy Tool</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-soil-900">Interactive Soil Dosage Calculator</h2>
+        <p class="text-xs text-soil-700 mt-2">Select your crop category and compost preference to estimate exact weight and bag requirements.</p>
+      </div>
+
+      <div class="bg-soil-100 rounded-3xl p-6 sm:p-10 border border-soil-200 shadow-md">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-soil-900 mb-2">1. Select Application Type</label>
+              <div class="grid grid-cols-2 gap-2 text-xs">
+                <button type="button" onclick="setAppType('pots')" id="btn-app-pots" class="p-3 rounded-xl border border-forest-700 bg-forest-700 text-white font-semibold text-left">
+                  Potted Plants<br><span class="opacity-75 font-normal">250g / Pot</span>
+                </button>
+                <button type="button" onclick="setAppType('beds')" id="btn-app-beds" class="p-3 rounded-xl border border-soil-200 bg-white text-soil-800 font-semibold text-left">
+                  Veg Beds / Lawn<br><span class="opacity-75 font-normal">1.5 kg / Sq.ft</span>
+                </button>
+                <button type="button" onclick="setAppType('trees')" id="btn-app-trees" class="p-3 rounded-xl border border-soil-200 bg-white text-soil-800 font-semibold text-left">
+                  Fruit Trees<br><span class="opacity-75 font-normal">10 kg / Tree</span>
+                </button>
+                <button type="button" onclick="setAppType('acre')" id="btn-app-acre" class="p-3 rounded-xl border border-soil-200 bg-white text-soil-800 font-semibold text-left">
+                  Farmland Acre<br><span class="opacity-75 font-normal">1,500 kg / Acre</span>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-soil-900 mb-2">2. Choose Compost Formulation</label>
+              <div class="space-y-2 text-xs">
+                <label class="flex items-center gap-2 p-3 rounded-xl border border-soil-200 bg-white cursor-pointer">
+                  <input type="radio" name="formulation" value="vermi" checked onchange="calculateDosage()" class="text-forest-700 focus:ring-forest-700">
+                  <span class="font-semibold text-soil-900">100% Cow Vermicompost</span> (Max NPK & Growth)
+                </label>
+                <label class="flex items-center gap-2 p-3 rounded-xl border border-soil-200 bg-white cursor-pointer">
+                  <input type="radio" name="formulation" value="forest" onchange="calculateDosage()" class="text-forest-700 focus:ring-forest-700">
+                  <span class="font-semibold text-soil-900">100% Forest Compost</span> (Aeration & Moisture)
+                </label>
+                <label class="flex items-center gap-2 p-3 rounded-xl border border-soil-200 bg-white cursor-pointer">
+                  <input type="radio" name="formulation" value="blend" onchange="calculateDosage()" class="text-forest-700 focus:ring-forest-700">
+                  <span class="font-semibold text-soil-900">50:50 Bhu Prana Blend</span> (Dual Synergy)
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-bold uppercase text-soil-900 mb-2">
+                <span id="slider-label">Number of Potted Plants:</span>
+                <span id="slider-val" class="font-mono text-forest-700">40 Pots</span>
+              </div>
+              <input type="range" id="quantity-slider" min="5" max="200" value="40" step="5" oninput="calculateDosage()" class="w-full">
+            </div>
+          </div>
+
+          <!-- Output Panel -->
+          <div class="bg-forest-900 rounded-2xl p-6 text-white flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-widest text-emerald-300 font-semibold block mb-1">Recommended Dosage</span>
+              <h3 class="font-serif text-3xl font-bold" id="res-kg">10 Kilograms (kg)</h3>
+              <p class="text-xs text-forest-200 mt-1" id="res-desc">10 kg of Premium Cow Dung Vermicompost</p>
+
+              <div class="my-6 p-4 rounded-xl bg-forest-800/80 border border-forest-700">
+                <span class="text-[11px] font-mono text-emerald-300 uppercase block mb-1">Optimal Packaging Breakdown:</span>
+                <span class="text-sm font-bold block" id="res-packs">2 × 5kg Retail Pouches</span>
+              </div>
+
+              <div class="text-xs text-forest-200 space-y-1.5">
+                <p><strong>How to Apply:</strong> <span id="res-apply">Loosen the top 2 inches of soil, mix compost around the root zone, and water thoroughly to activate beneficial microbes.</span></p>
+              </div>
+            </div>
+
+            <a href="#quote-hub" onclick="transferToQuote()" class="mt-6 w-full inline-flex items-center justify-center py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-forest-900 font-bold text-xs uppercase tracking-wider transition-all">
+              Load Quantity into Quote Form
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5-Stage Scientific Manufacturing Process -->
+  <section id="process" class="py-20 border-b border-soil-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-wider uppercase text-forest-700 block mb-2">Zero Shortcuts • 60 to 180 Days Curing</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-soil-900">Our 5-Stage Scientific Manufacturing Process</h2>
+        <p class="text-xs text-soil-700 mt-2">Every batch goes through strict biological conditioning to ensure high viable microbial counts, zero foul smell, and complete elimination of weed seeds.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <!-- Stage 1 -->
+        <div class="bg-soil-100 p-4 rounded-2xl border border-soil-200 flex flex-col justify-between">
+          <div>
+            <div class="aspect-video rounded-lg overflow-hidden bg-soil-200 mb-3">
+              <img src="20260405_115204.jpg" class="w-full h-full object-cover" alt="Stage 1">
+            </div>
+            <span class="text-xs font-mono font-bold text-forest-700">STAGE 01</span>
+            <h4 class="font-bold text-sm text-soil-900 mt-1">Ethical Sourcing</h4>
+            <p class="text-xs text-soil-700 mt-1">Collecting pure cow dung from partner gaushalas and shed forest leaves—strictly free of municipal plastics.</p>
+          </div>
+          <span class="text-[10px] text-soil-600 block mt-4 font-mono">Day 1 – 5</span>
+        </div>
+
+        <!-- Stage 2 -->
+        <div class="bg-soil-100 p-4 rounded-2xl border border-soil-200 flex flex-col justify-between">
+          <div>
+            <div class="aspect-video rounded-lg overflow-hidden bg-soil-200 mb-3">
+              <img src="1000044718.jpg" class="w-full h-full object-cover" alt="Stage 2">
+            </div>
+            <span class="text-xs font-mono font-bold text-forest-700">STAGE 02</span>
+            <h4 class="font-bold text-sm text-soil-900 mt-1">Thermal Sanitization</h4>
+            <p class="text-xs text-soil-700 mt-1">21-day aerobic pre-composting at 55°C–65°C to neutralize methane, pathogens, and weed seeds.</p>
+          </div>
+          <span class="text-[10px] text-soil-600 block mt-4 font-mono">Day 6 – 25</span>
+        </div>
+
+        <!-- Stage 3 -->
+        <div class="bg-soil-100 p-4 rounded-2xl border border-soil-200 flex flex-col justify-between">
+          <div>
+            <div class="aspect-video rounded-lg overflow-hidden bg-soil-200 mb-3">
+              <img src="1000044695.jpg" class="w-full h-full object-cover" alt="Stage 3">
+            </div>
+            <span class="text-xs font-mono font-bold text-forest-700">STAGE 03</span>
+            <h4 class="font-bold text-sm text-soil-900 mt-1">Vermibed Digestion</h4>
+            <p class="text-xs text-soil-700 mt-1">Inoculation with <em>Eisenia fetida</em> earthworms and forest leaf-mold mycorrhizal fungi for deep digestion.</p>
+          </div>
+          <span class="text-[10px] text-soil-600 block mt-4 font-mono">Day 26 – 75+</span>
+        </div>
+
+        <!-- Stage 4 -->
+        <div class="bg-soil-100 p-4 rounded-2xl border border-soil-200 flex flex-col justify-between">
+          <div>
+            <div class="aspect-video rounded-lg overflow-hidden bg-soil-200 mb-3">
+              <img src="image_99fa3edc.jpg" class="w-full h-full object-cover" alt="Stage 4">
+            </div>
+            <span class="text-xs font-mono font-bold text-forest-700">STAGE 04</span>
+            <h4 class="font-bold text-sm text-soil-900 mt-1">4mm Rotary Sieving</h4>
+            <p class="text-xs text-soil-700 mt-1">Mechanical 4mm trommel screening delivers uniform tea-granules and returns cocoons safely to beds.</p>
+          </div>
+          <span class="text-[10px] text-soil-600 block mt-4 font-mono">Moisture: 24%</span>
+        </div>
+
+        <!-- Stage 5 -->
+        <div class="bg-soil-100 p-4 rounded-2xl border border-soil-200 flex flex-col justify-between">
+          <div>
+            <div class="aspect-video rounded-lg overflow-hidden bg-soil-200 mb-3">
+              <img src="1000044645.jpg" class="w-full h-full object-cover" alt="Stage 5">
+            </div>
+            <span class="text-xs font-mono font-bold text-forest-700">STAGE 05</span>
+            <h4 class="font-bold text-sm text-soil-900 mt-1">Lab Assay & Storage</h4>
+            <p class="text-xs text-soil-700 mt-1">Batch tested in our on-site QC lab and packed into breathable, UV-stabilized bags stored on wooden pallets.</p>
+          </div>
+          <span class="text-[10px] text-soil-600 block mt-4 font-mono">Batch Certified</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership & Founders Section -->
+  <section id="leadership" class="py-20 border-b border-soil-200 bg-soil-100/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-semibold tracking-wider uppercase text-forest-700 block mb-2">Visionary Stewardship & Ground-Level Execution</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-soil-900">Meet the Leadership Behind BHU PRANA ORGANICS</h2>
+        <p class="text-soil-700 mt-4 leading-relaxed">Built on hands-on agricultural dedication and uncompromising quality governance, our founders personally oversee every stage—from brick vermibed moisture curing to institutional B2B supply across India.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <!-- Founder Card -->
+        <div class="bg-soil-100 rounded-3xl p-6 sm:p-8 border border-soil-200 shadow-sm flex flex-col md:flex-row gap-6">
+          <div class="w-full md:w-48 shrink-0">
+            <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-soil-200 border border-soil-200">
+              <img src="IMG_20250630_121202_986.webp" alt="Deepak Kumar - Founder & Managing Director" class="w-full h-full object-cover">
+            </div>
+            <span class="text-[11px] font-mono text-center block text-forest-700 font-bold mt-2 uppercase">Founder & MD</span>
+          </div>
+          <div class="flex-1 space-y-3">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-soil-900">Deepak Kumar</h3>
+              <p class="text-xs font-semibold text-forest-700">Founder & Managing Director • BHU PRANA ORGANICS</p>
+            </div>
+            <p class="text-xs text-soil-700 leading-relaxed">
+              Spearheads overall corporate vision, strategic expansion, large-scale B2B institutional partnerships, and quality governance across BHU PRANA ORGANICS' cow dung vermicompost and pure forest humus production lines.
+            </p>
+            <div class="pt-2">
+              <h5 class="text-[11px] font-bold uppercase tracking-wider text-soil-900 mb-1">Key Leadership Mandates:</h5>
+              <ul class="text-xs text-soil-700 space-y-1">
+                <li>• Corporate strategy & FCO analytical quality compliance</li>
+                <li>• B2B institutional alliances with FPOs, nurseries & orchards</li>
+                <li>• Sustainable gaushala & forest buffer feedstock partnerships</li>
+              </ul>
+            </div>
+            <blockquote class="border-l-2 border-forest-700 pl-3 italic text-xs text-soil-800 pt-1">
+              "Our mission at BHU PRANA ORGANICS is to restore living organic carbon to India's farmlands—delivering 100% pure, lab-verified compost with zero chemical fillers."
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Co-Founder Card -->
+        <div class="bg-soil-100 rounded-3xl p-6 sm:p-8 border border-soil-200 shadow-sm flex flex-col md:flex-row gap-6">
+          <div class="w-full md:w-48 shrink-0">
+            <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-soil-200 border border-soil-200">
+              <img src="20250626_102815.jpg" alt="Devanand Kumar - Co-Founder, CEO & President" class="w-full h-full object-cover">
+            </div>
+            <span class="text-[11px] font-mono text-center block text-forest-700 font-bold mt-2 uppercase">Co-Founder & CEO</span>
+          </div>
+          <div class="flex-1 space-y-3">
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-soil-900">Devanand Kumar</h3>
+              <p class="text-xs font-semibold text-forest-700">Co-Founder, CEO & President • BHU PRANA ORGANICS</p>
+            </div>
+            <p class="text-xs text-soil-700 leading-relaxed">
+              Leads day-to-day manufacturing plant operations, brick & HDPE vermibed moisture curing, <em>Eisenia fetida</em> earthworm colony management, 4mm rotary sieving quality control, and supply chain execution from bed to farmer.
+            </p>
+            <div class="pt-2">
+              <h5 class="text-[11px] font-bold uppercase tracking-wider text-soil-900 mb-1">Key Operational Mandates:</h5>
+              <ul class="text-xs text-soil-700 space-y-1">
+                <li>• Hands-on brick vermibed hydration, aeration & worm health</li>
+                <li>• 180-day forest leaf-mold fungal inoculation & rotary sieving</li>
+                <li>• End-to-end bagging, palletized warehouse & pan-India dispatch</li>
+              </ul>
+            </div>
+            <blockquote class="border-l-2 border-forest-700 pl-3 italic text-xs text-soil-800 pt-1">
+              "True compost quality is built right at the vermibeds—maintaining exact moisture, cool shade, and thriving earthworm cultures every single day."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bulk & Retail Order Hub / Quote Generator -->
+  <section id="quote-hub" class="py-20 border-b border-soil-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 space-y-6">
+          <span class="text-xs font-semibold tracking-wider uppercase text-forest-700 block">Direct Factory Pricing</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-soil-900">Partner With Us: Retail, Nursery & Bulk Supply</h2>
+          <p class="text-sm text-soil-700 leading-relaxed">
+            Whether you need a few 5kg pouches for your terrace garden, 50kg bags for a commercial orchard, or white-label bulk tonnage for your nursery or FPO, we offer consistent year-round supply.
+          </p>
+
+          <div class="p-6 rounded-2xl bg-soil-100 border border-soil-200 space-y-4">
+            <h4 class="font-serif font-bold text-base text-soil-900">BHU PRANA ORGANICS — Manufacturing & Dispatch Hub</h4>
+            <p class="text-xs text-soil-700"><strong>Leadership:</strong> Deepak Kumar (Founder & MD) • Devanand Kumar (Co-Founder, CEO & President)</p>
+            <div class="text-xs text-soil-700 space-y-2">
+              <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-forest-700 shrink-0"></i> Sonbarsa (Mahui), Gaunaha, Bettiah, W. Champaran, Bihar, India</p>
+              <p class="flex items-center gap-2"><i data-lucide="phone-call" class="w-4 h-4 text-forest-700 shrink-0"></i> Sales Desk: +91 7209166511 (Mon–Sat, 8 AM – 7 PM)</p>
+              <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-forest-700 shrink-0"></i> orders@bhupranaorganics.com</p>
+            </div>
+          </div>
+
+          <!-- 2kg Trial Pack -->
+          <div class="p-6 rounded-2xl bg-emerald-50 border border-emerald-200">
+            <span class="text-xs uppercase tracking-wider text-emerald-800 font-bold block mb-1">Trial Evaluation Pack</span>
+            <h4 class="font-serif font-bold text-lg text-emerald-950">Order 2kg Twin-Sample Kit</h4>
+            <p class="text-xs text-emerald-800 mt-1 leading-relaxed">Evaluate our quality before placing a bulk order. The Sample Kit includes 1kg Premium Cow Dung Vermicompost + 1kg Pure Forest Waste Compost along with our latest Lab Certificate of Analysis (COA).</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-sm font-bold text-emerald-950">Sample Kit Fee: ₹199 <span class="text-xs font-normal opacity-80">(Express Courier)</span></span>
+              <a href="https://wa.me/917209166511?text=Hello%20Bhu%20Prana%20Organics,%20I%20would%20like%20to%20order%20the%202kg%20Twin-Sample%20Kit." target="_blank" class="px-4 py-2 rounded-lg bg-forest-700 text-white font-bold text-xs uppercase tracking-wider hover:bg-forest-800">
+                Request Kit
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Panel -->
+        <div class="lg:col-span-7 bg-soil-100 p-8 rounded-3xl border border-soil-200 shadow-md">
+          <h3 class="font-serif text-2xl font-bold text-soil-900 mb-6">Generate Instant Quote / Order Summary</h3>
+          <form id="quote-form" onsubmit="event.preventDefault(); generateInquiry();" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-soil-900 mb-1">Your Name / Organization *</label>
+                <input type="text" id="q-name" required placeholder="e.g. Ramesh Agro Farms" class="w-full px-4 py-2.5 rounded-xl border border-soil-200 bg-white text-sm focus:ring-2 focus:ring-forest-700">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-soil-900 mb-1">Phone / WhatsApp Number *</label>
+                <input type="tel" id="q-phone" required placeholder="+91 98765 43210" class="w-full px-4 py-2.5 rounded-xl border border-soil-200 bg-white text-sm focus:ring-2 focus:ring-forest-700">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-soil-900 mb-1">Select Product *</label>
+                <select id="q-product" class="w-full px-4 py-2.5 rounded-xl border border-soil-200 bg-white text-sm focus:ring-2 focus:ring-forest-700">
+                  <option value="Premium Cow Dung Vermicompost">1. Premium Cow Dung Vermicompost</option>
+                  <option value="Pure Forest Waste Compost (Leaf Humus)">2. Pure Forest Waste Compost (Leaf Humus)</option>
+                  <option value="Both Products (Combined Order)">3. Both Products (Combined Order)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-soil-900 mb-1">Packaging Preference *</label>
+                <select id="q-pack" class="w-full px-4 py-2.5 rounded-xl border border-soil-200 bg-white text-sm focus:ring-2 focus:ring-forest-700">
+                  <option value="50kg Commercial HDPE Bags">50kg Commercial HDPE Bags</option>
+                  <option value="25kg Easy-Carry Nursery Bags">25kg Easy-Carry Nursery Bags</option>
+                  <option value="5kg / 10kg Retail Pouches">5kg / 10kg Retail Pouches</option>
+                  <option value="Loose Bulk Tonnage (Truck Load)">Loose Bulk Tonnage (Truck Load)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-soil-900 mb-1">Estimated Quantity (kg or Tons) *</label>
+                <input type="text" id="q-qty" required placeholder="e.g. 500 kg or 10 Metric Tons" class="w-full px-4 py-2.5 rounded-xl border border-soil-200 bg-white text-sm focus:ring-2 focus:ring-forest-700">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-soil-900 mb-1">Delivery City / Pin Code *</label>
+                <input type="text" id="q-location" required placeholder="e.g. Muzaffarpur, Bihar - 842001" class="w-full px-4 py-2.5 rounded-xl border border-soil-200 bg-white text-sm focus:ring-2 focus:ring-forest-700">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-soil-900 mb-1">Special Requirements</label>
+              <textarea id="q-notes" rows="2" placeholder="White-label branding, customized moisture level, or lab COA requirements..." class="w-full px-4 py-2.5 rounded-xl border border-soil-200 bg-white text-sm focus:ring-2 focus:ring-forest-700"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-sm uppercase tracking-wider shadow-md transition-all">
+              Generate Instant Inquiry & WhatsApp Message
+            </button>
+          </form>
+
+          <div id="inquiry-output" class="hidden mt-6 p-4 rounded-xl bg-white border border-soil-200">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-mono font-bold text-forest-700 uppercase">Ready-to-Send Inquiry Summary:</span>
+              <button onclick="copyInquiryText()" class="text-xs font-bold text-forest-700 hover:underline">Copy Summary</button>
+            </div>
+            <pre id="inquiry-text" class="text-xs font-mono bg-soil-50 p-3 rounded-lg border border-soil-200 text-soil-800 whitespace-pre-wrap"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-soil-900 text-soil-200 py-12 border-t border-soil-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-6">
+      <div>
+        <span class="font-serif font-bold text-xl text-white block">BHU PRANA ORGANICS</span>
+        <span class="text-xs text-soil-400 mt-1 block">Founded by Deepak Kumar (MD) & Devanand Kumar (CEO & President)</span>
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 text-xs text-soil-400">
+        <a href="#flagship-products" class="hover:text-white">Products</a>
+        <a href="#facility-gallery" class="hover:text-white">Facility Gallery</a>
+        <a href="#leadership" class="hover:text-white">Leadership & Founders</a>
+        <a href="#dosage-calculator" class="hover:text-white">Dosage Calculator</a>
+        <a href="#quote-hub" class="hover:text-white">Order / Quote</a>
+      </div>
+      <p class="text-xs text-soil-500">
+        © 2026 BHU PRANA ORGANICS. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Lucide Icons Init
+    lucide.createIcons();
+
+    // Hero Preview Switcher
+    function setHeroPreview(src) {
+      document.getElementById('hero-preview-img').src = src;
+    }
+
+    // Dosage Calculator Logic
+    let currentAppType = 'pots';
+    const appRates = {
+      pots: { label: 'Number of Potted Plants:', unit: 'Pots', rate: 0.25, min: 5, max: 200, step: 5, defVal: 40 },
+      beds: { label: 'Raised Beds / Lawn Area:', unit: 'Sq. Ft.', rate: 1.5, min: 50, max: 2000, step: 50, defVal: 200 },
+      trees: { label: 'Number of Mature Fruit Trees:', unit: 'Trees', rate: 10, min: 5, max: 100, step: 5, defVal: 15 },
+      acre: { label: 'Farmland Field Area:', unit: 'Acres', rate: 1500, min: 1, max: 25, step: 1, defVal: 2 }
+    };
+
+    function setAppType(type) {
+      currentAppType = type;
+      ['pots', 'beds', 'trees', 'acre'].forEach(t => {
+        const btn = document.getElementById('btn-app-' + t);
+        if (t === type) {
+          btn.className = "p-3 rounded-xl border border-forest-700 bg-forest-700 text-white font-semibold text-left";
+        } else {
+          btn.className = "p-3 rounded-xl border border-soil-200 bg-white text-soil-800 font-semibold text-left";
+        }
+      });
+      const cfg = appRates[type];
+      const slider = document.getElementById('quantity-slider');
+      slider.min = cfg.min;
+      slider.max = cfg.max;
+      slider.step = cfg.step;
+      slider.value = cfg.defVal;
+      document.getElementById('slider-label').innerText = cfg.label;
+      calculateDosage();
+    }
+
+    function calculateDosage() {
+      const cfg = appRates[currentAppType];
+      const val = parseFloat(document.getElementById('quantity-slider').value);
+      document.getElementById('slider-val').innerText = `${val} ${cfg.unit}`;
+
+      const totalKg = Math.round(val * cfg.rate);
+      document.getElementById('res-kg').innerText = `${totalKg} Kilograms (kg)`;
+
+      const form = document.querySelector('input[name="formulation"]:checked').value;
+      let formName = "Premium Cow Dung Vermicompost";
+      if (form === 'forest') formName = "Pure Forest Waste Compost";
+      if (form === 'blend') formName = "50:50 Bhu Prana Synergy Blend";
+      document.getElementById('res-desc').innerText = `${totalKg} kg of ${formName}`;
+
+      let packs = "";
+      if (totalKg <= 25) {
+        packs = `${Math.ceil(totalKg / 5)} × 5kg Retail Pouches`;
+      } else if (totalKg <= 250) {
+        packs = `${Math.ceil(totalKg / 25)} × 25kg Bags`;
+      } else {
+        packs = `${Math.ceil(totalKg / 50)} × 50kg HDPE Commercial Sacks (${(totalKg/1000).toFixed(2)} MT)`;
+      }
+      document.getElementById('res-packs').innerText = packs;
+    }
+
+    function transferToQuote() {
+      const kgText = document.getElementById('res-kg').innerText;
+      document.getElementById('q-qty').value = kgText;
+    }
+
+    function generateInquiry() {
+      const name = document.getElementById('q-name').value;
+      const phone = document.getElementById('q-phone').value;
+      const product = document.getElementById('q-product').value;
+      const pack = document.getElementById('q-pack').value;
+      const qty = document.getElementById('q-qty').value;
+      const loc = document.getElementById('q-location').value;
+      const notes = document.getElementById('q-notes').value;
+
+      const summary = `*INQUIRY: BHU PRANA ORGANICS*
+Client: ${name}
+Phone: ${phone}
+Product: ${product}
+Packaging: ${pack}
+Quantity: ${qty}
+Delivery Location: ${loc}
+Special Requirements: ${notes || 'None'}`;
+
+      document.getElementById('inquiry-text').innerText = summary;
+      document.getElementById('inquiry-output').classList.remove('hidden');
+
+      const waUrl = `https://wa.me/917209166511?text=${encodeURIComponent(summary)}`;
+      window.open(waUrl, '_blank');
+    }
+
+    function copyInquiryText() {
+      const text = document.getElementById('inquiry-text').innerText;
+      navigator.clipboard.writeText(text);
+      alert('Inquiry copied to clipboard!');
+    }
+
+    // Initial calculation
+    calculateDosage();
+  </script>
+</body>
+</html>
