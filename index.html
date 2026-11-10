@@ -811,9 +811,46 @@
             <button type="submit" class="w-full py-3.5 rounded-xl bg-forest-700 hover:bg-forest-800 text-white font-bold text-sm uppercase tracking-wider shadow-md transition-all">
               Generate Instant Inquiry & WhatsApp Message
             </button>
-          </form>
+              <script>
+    function generateInquiry() {
+      const whatsappNumber = "918292154697";
+      
+      const name = document.getElementById('q-name').value.trim();
+      const phone = document.getElementById('q-phone').value.trim();
+      const product = document.getElementById('q-product').value;
+      const pack = document.getElementById('q-pack').value;
+      const qty = document.getElementById('q-qty').value.trim();
+      const location = document.getElementById('q-location').value.trim();
+      const notes = document.getElementById('q-notes').value.trim() || "None";
 
-          <div id="inquiry-output" class="hidden mt-6 p-4 rounded-xl bg-white border border-soil-200">
+      const message = `*NEW QUOTATION INQUIRY - BHU PRANA ORGANICS*\n\n` +
+                      `*Name / Org:* ${name}\n` +
+                      `*Phone:* ${phone}\n` +
+                      `*Product:* ${product}\n` +
+                      `*Packaging:* ${pack}\n` +
+                      `*Quantity:* ${qty}\n` +
+                      `*Delivery Location:* ${location}\n` +
+                      `*Special Notes:* ${notes}`;
+
+      // Show the summary box on the page
+      document.getElementById('inquiry-text').textContent = message;
+      document.getElementById('inquiry-output').classList.remove('hidden');
+
+      // Build WhatsApp URL and open it
+      const whatsappUrl = `https://wa.me{whatsappNumber}?text=${encodeURIComponent(message)}`;
+      document.getElementById('whatsapp-direct-link').href = whatsappUrl;
+      window.open(whatsappUrl, '_blank');
+    }
+
+    function copyInquiryText() {
+      const text = document.getElementById('inquiry-text').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Inquiry summary copied to clipboard!");
+      });
+    }
+  </script>          
+          </form>
+   <div id="inquiry-output" class="hidden mt-6 p-4 rounded-xl bg-white border border-soil-200">
             <div class="flex items-center justify-between mb-2">
               <span class="text-xs font-mono font-bold text-forest-700 uppercase">Ready-to-Send Inquiry Summary:</span>
               <button onclick="copyInquiryText()" class="text-xs font-bold text-forest-700 hover:underline">Copy Summary</button>
@@ -946,44 +983,6 @@ Special Requirements: ${notes || 'None'}`;
 
     // Initial calculation
     calculateDosage();
-  </script>
-  <script>
-    function generateInquiry() {
-      const whatsappNumber = "918292154697";
-      
-      const name = document.getElementById('q-name').value.trim();
-      const phone = document.getElementById('q-phone').value.trim();
-      const product = document.getElementById('q-product').value;
-      const pack = document.getElementById('q-pack').value;
-      const qty = document.getElementById('q-qty').value.trim();
-      const location = document.getElementById('q-location').value.trim();
-      const notes = document.getElementById('q-notes').value.trim() || "None";
-
-      const message = `*NEW QUOTATION INQUIRY - BHU PRANA ORGANICS*\n\n` +
-                      `*Name / Org:* ${name}\n` +
-                      `*Phone:* ${phone}\n` +
-                      `*Product:* ${product}\n` +
-                      `*Packaging:* ${pack}\n` +
-                      `*Quantity:* ${qty}\n` +
-                      `*Delivery Location:* ${location}\n` +
-                      `*Special Notes:* ${notes}`;
-
-      // Show the summary box on the page
-      document.getElementById('inquiry-text').textContent = message;
-      document.getElementById('inquiry-output').classList.remove('hidden');
-
-      // Build WhatsApp URL and open it
-      const whatsappUrl = `https://wa.me{whatsappNumber}?text=${encodeURIComponent(message)}`;
-      document.getElementById('whatsapp-direct-link').href = whatsappUrl;
-      window.open(whatsappUrl, '_blank');
-    }
-
-    function copyInquiryText() {
-      const text = document.getElementById('inquiry-text').textContent;
-      navigator.clipboard.writeText(text).then(() => {
-        alert("Inquiry summary copied to clipboard!");
-      });
-    }
   </script>
 </body>
 </html>
